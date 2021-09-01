@@ -171,8 +171,8 @@ function preloaderFunction() {
   preloader.style.display = "none";
 }
 
-// message
-const messageButton = document.getElementById("message");
+// send mail from smtpJS server
+const messageButton = document.getElementById("message-button");
 
 messageButton.addEventListener("click", (e) => {
   const textId = document.getElementById("textMessage");
@@ -185,6 +185,17 @@ messageButton.addEventListener("click", (e) => {
       alert("message sent successfully");
     }, 2000);
   }
-
   e.preventDefault();
+
+  // const name = document.getElementById("name").value;
+  // const mail = document.getElementById("mail").value;
+  // const message = document.getElementById("message").value;
+
+  // Email.send({
+  //   SecureToken: "10d593ee-f276-4d1a-a7ad-28a678fa7e1d",
+  //   To: "balaramgayen53501@gmail.com",
+  //   From: mail,
+  //   Subject: "new message from" + name,
+  //   Body: message,
+  // }).then((message) => alert(message));
 });
