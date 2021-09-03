@@ -175,17 +175,20 @@ function preloaderFunction() {
 const messageButton = document.getElementById("message-button");
 
 messageButton.addEventListener("click", (e) => {
-  const textId = document.getElementById("textMessage");
-  const text = document.getElementById("textMessage").value;
+  e.preventDefault();
+
+  const textId = document.getElementById("message");
+  const text = document.getElementById("message").value;
   if (!text) {
     alert("please fill something");
   } else {
-    textId.value = "";
     setTimeout(() => {
-      alert("message sent successfully");
-    }, 2000);
+      textId.value = "";
+      setTimeout(() => {
+        alert("message sent successfully");
+      }, 1350);
+    }, 1300);
   }
-  e.preventDefault();
 
   // const name = document.getElementById("name").value;
   // const mail = document.getElementById("mail").value;
