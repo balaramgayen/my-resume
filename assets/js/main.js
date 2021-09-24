@@ -171,7 +171,7 @@ function preloaderFunction() {
   preloader.style.display = "none";
 }
 
-// send mail from smtpJS server
+// send mail
 const messageButton = document.getElementById("message-button");
 
 messageButton.addEventListener("click", (e) => {
@@ -189,16 +189,4 @@ messageButton.addEventListener("click", (e) => {
       }, 1350);
     }, 1300);
   }
-
-  // const name = document.getElementById("name").value;
-  // const mail = document.getElementById("mail").value;
-  // const message = document.getElementById("message").value;
-
-  // Email.send({
-  //   SecureToken: "10d593ee-f276-4d1a-a7ad-28a678fa7e1d",
-  //   To: "balaramgayen53501@gmail.com",
-  //   From: mail,
-  //   Subject: "new message from" + name,
-  //   Body: message,
-  // }).then((message) => alert(message));
 });

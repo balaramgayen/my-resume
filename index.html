@@ -539,13 +539,14 @@
         <div class="swiper-wrapper">
           <!--==================== PORTFOLIO 1 ====================-->
           <div class="portfolio_content grid swiper-slide">
-            <img src="./assets/img/weather.jpg" alt="" class="portfolio_img">
+            <img src="./assets/img/covidTracker.png" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
-              <h3 class="portfolio_title">weather forecast</h3>
-              <p class="portfolio_description">On this website, you can find any city's current weather. You can search
-                around the world with city names and also zip code numbers.</p>
-              <a href="http://weatherworld09.herokuapp.com/" target="blank"
+              <h3 class="portfolio_title">Covid Tracker</h3>
+              <p class="portfolio_description">This is a covid cases tracker system around the world, on this website
+                you will find daily covid cases data with
+                infected cases, death cases and recovered cases.</p>
+              <a href="https://covidtrackerworld.netlify.app/" target="blank"
                 class="button button--flex button_small portfolio_button">
                 Take a look
                 <i class="uil uil-arrow-right button_icon"></i>
@@ -554,13 +555,14 @@
           </div>
           <!--==================== PORTFOLIO 2 ====================-->
           <div class="portfolio_content grid swiper-slide">
-            <img src="./assets/img/quiz.jpg" alt="" class="portfolio_img">
+            <img src="./assets/img/recipeFinder.png" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
-              <h3 class="portfolio_title">quiz contest</h3>
-              <p class="portfolio_description">This website is for quizzes, you can test your quiz contestability. There
-                are 9 topics and each topic has 10 questions.</p>
-              <a href="https://globalquizbg.herokuapp.com/" target="blank"
+              <h3 class="portfolio_title">Recipe finder</h3>
+              <p class="portfolio_description">This is a wonderful recipes finder website, where you can find every kind
+                of recipe around the world and also you
+                can search various cousin types food with nutritional values</p>
+              <a href="https://allrecipefinder.netlify.app/" target="blank"
                 class="button button--flex button_small portfolio_button">
                 Take a look
                 <i class="uil uil-arrow-right button_icon"></i>
@@ -569,13 +571,43 @@
           </div>
           <!--==================== PORTFOLIO 3 ====================-->
           <div class="portfolio_content grid swiper-slide">
+            <img src="./assets/img/weather.jpg" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">weather forecast</h3>
+              <p class="portfolio_description">On this website, you can find any city's current weather. You can search
+                around the world with city names and also zip code numbers.</p>
+              <a href="https://weather-worlds.netlify.app/" target="blank"
+                class="button button--flex button_small portfolio_button">
+                Take a look
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 4 ====================-->
+          <div class="portfolio_content grid swiper-slide">
+            <img src="./assets/img/quiz.jpg" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">quiz contest</h3>
+              <p class="portfolio_description">This website is for quizzes, you can test your quiz contestability. There
+                are 9 topics and each topic has 10 questions.</p>
+              <a href="https://worlds-quiz.netlify.app/" target="blank"
+                class="button button--flex button_small portfolio_button">
+                Take a look
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 5 ====================-->
+          <div class="portfolio_content grid swiper-slide">
             <img src="./assets/img/movie.jpg" alt="" class="portfolio_img">
 
             <div class="portfolio_data">
               <h3 class="portfolio_title">Movies finder</h3>
               <p class="portfolio_description">This is a movie finder site where you can find any kind of movie details,
                 upcoming movies, popular movies any many more.</p>
-              <a href="https://moviebg54632.herokuapp.com/" target="blank"
+              <a href="https://movies-info-bg.netlify.app/" target="blank"
                 class="button button--flex button_small portfolio_button">
                 Take a look
                 <i class="uil uil-arrow-right button_icon"></i>
@@ -652,25 +684,25 @@
             </div>
           </div>
         </div>
-        <form method="POST" class="contact_form grid">
+        <form id="my-form" action="https://formspree.io/f/xrgrjayo" method="POST" class="contact_form grid">
           <div class="contact_inputs grid">
             <div class="contact_content">
-              <label for="" class="contact_label">Name</label>
-              <input id="name" type="text" class="contact_input">
+              <label class="contact_label">Name</label>
+              <input name="name" id="name" type="text" class="contact_input">
             </div>
 
             <div class="contact_content">
-              <label for="" class="contact_label">Email</label>
-              <input id="mail" type="email" class="contact_input">
+              <label class="contact_label">Email</label>
+              <input id="mail" name="email" type="email" class="contact_input">
             </div>
 
             <div class="contact_content">
-              <label for="" class="contact_label">Message</label>
-              <textarea name="" id="message" cols="0" rows="7" class="contact_input"></textarea>
+              <label class="contact_label">Message</label>
+              <textarea name="message" type="text" id="message" cols="0" rows="7" class="contact_input"></textarea>
             </div>
 
             <div>
-              <a type="submit" href="" id="message-button" class="button button--flex">
+              <a type="submit" id="message-button" class="button button--flex">
                 Send Message
                 <i class="uil uil-message button_icon"></i>
               </a>
@@ -732,7 +764,7 @@
   <script src="./assets/js/swiper-bundle.min.js"></script>
 
   <!-- =================send mail from smtpJS sever ======= -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
   <!--==================== MAIN JS ====================-->
   <script src="./assets/js/main.js"></script>

@@ -19,7 +19,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 90%);
-    --body-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: LightGray;
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -397,6 +397,10 @@ img{
 }
 .button_white:hover{
     background-color: white;
+}
+
+#message-button{
+    cursor: pointer;
 }
 
 /*==================== ABOUT ====================*/
